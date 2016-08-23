@@ -1,7 +1,9 @@
 #include <fstream>
 #include <iostream>
 #include <vector>
+
 #include "config.h"
+#include "base64.h"
 
 using namespace std;
 
@@ -27,5 +29,5 @@ int main() {
 
     cout << std::endl;
 
-    return 0;
+    return test();
 }
