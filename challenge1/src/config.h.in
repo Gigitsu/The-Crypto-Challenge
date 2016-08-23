@@ -1,0 +1,5 @@
+//
+// Created by gigitsu on 23/08/2016.
+//
+
+#define HEX_FILE "@PROJECT_HEX_FILE@"
