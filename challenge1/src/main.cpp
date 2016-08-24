@@ -7,27 +7,46 @@
 
 using namespace std;
 
-vector<char> readAllBytes(const char *file)
+string readBase64File()
 {
-    ifstream fl(file, ios::ate | ios::in | ios::binary);
-    size_t size = fl.tellg();
+    ifstream in(BASE64_FILE, ios::ate | ios::in | ios::binary);
 
-    vector<char> ret(size);
+    string str(in.tellg(), ' ');
 
-    fl.seekg(0, ios::beg);
-    fl.read(&ret[0], size);
+    in.seekg(0, ios::beg);
+    in.read(&str[0], str.size());
+
+    return str;
+}
+
+vector<int> readHexFile()
+{
+    ifstream in(HEX_FILE, ios::ate | ios::in | ios::binary);
+    auto size = in.tellg();
+
+    if(size % 2 != 0) {
+        throw runtime_error("The input string is not odd!");
+    }
+
+    vector<int> ret(size / 2);
+
+    in.seekg(0, ios::beg);
+
+    for(auto i = 0; i < ret.size(); ++i) {
+        string str(2, ' ');
+        in.read(&str[0], 2);
+        ret[i] = (stoi(str, 0, 16));
+    }
 
     return ret;
 }
 
 int main() {
-    vector<char> hex = readAllBytes(HEX_FILE);
+    auto hex = readHexFile();
+    auto b64 = readBase64File();
 
-    for(int i = 0; i < hex.size(); ++i) {
-        cout << hex[i];
-    }
+    //cout << (base64::encode(hex) == b64) << std::endl;
+    cout << base64::encode({65, 66, 67}) << std::endl;
 
-    cout << std::endl;
-
-    return test();
+    return 0;
 }

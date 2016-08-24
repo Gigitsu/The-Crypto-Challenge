@@ -3,3 +3,4 @@
 //
 
 #define HEX_FILE "@PROJECT_HEX_FILE@"
+#define BASE64_FILE "@PROJECT_BASE64_FILE@"
