@@ -4,7 +4,7 @@
 using namespace std;
 
 namespace base64 {
-    string encode(vector<int> hex);
+    string encode(vector<char> bytes);
 
     int decode();
 }

@@ -11,26 +11,27 @@ namespace base64 {
         else if (e < 62) return e - 4;
         else if (e == 62) return '+';
         else if (e == 63) return '/';
+        else return '=';
     }
 
-    string encodeTriple(int c1, int c2, int c3) {
-        const char b[4] = {
-                toASCII(c1 >> 2 & 0x3F),
-                toASCII((c1 << 4 & 0x30) | (c2 >> 4 & 0xF)),
-                toASCII((c2 << 2 & 0x3C) | (c3 >> 6 & 0x3)),
-                toASCII(c3 & 0x3F)
-        };
+    string encodeTriple(char *chars, int size) {
+        int c = 0;
+        vector<char> encoded{'=', '=', '=', '='};
 
+        for (int i = 0; i < size; ++i)
+            c = c | chars[i] << 8 * (2 - i);
 
-        return string(b, 4);
+        for (int i = 0; i < size + 1; ++i)
+            encoded[i] = toASCII(c >> 6 * (3 - i) & 0x3F);
+
+        return string(&encoded[0], 4);
     }
 
-    string encode(vector<int> hex) {
+    string encode(vector<char> bytes) {
         string encoded = "";
 
-        for (int i = 0; i < hex.size(); i = i + 3) {
-            encoded = encoded + encodeTriple(hex[i], hex[i + 1], hex[i + 2]);
-        }
+        for (int i = 0; i < bytes.size(); i = i + 3)
+            encoded = encoded + encodeTriple(&bytes[i], min(3, (int) bytes.size() - i));
 
         return encoded;
     }
