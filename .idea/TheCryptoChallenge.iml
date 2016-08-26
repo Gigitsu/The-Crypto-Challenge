@@ -6,9 +6,9 @@
       <sourceFolder url="file://$MODULE_DIR$/challenge1/src/config.h.in" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/challenge1/CMakeLists.txt" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/commons/src/io.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/commons/src/base64.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/commons/CMakeLists.txt" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/commons/include/base64.h" isTestSource="false" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library">

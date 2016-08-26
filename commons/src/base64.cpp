@@ -1,5 +1,4 @@
 #include <string>
-#include <vector>
 
 using namespace std;
 
@@ -16,7 +15,7 @@ namespace base64 {
 
     string encodeTriple(char *chars, int size) {
         int c = 0;
-        vector<char> encoded{'=', '=', '=', '='};
+        string encoded(4, '=');
 
         for (int i = 0; i < size; ++i)
             c = c | chars[i] << 8 * (2 - i);
@@ -27,11 +26,12 @@ namespace base64 {
         return string(&encoded[0], 4);
     }
 
-    string encode(vector<char> bytes) {
+    string encode(string bytes) {
         string encoded = "";
 
-        for (int i = 0; i < bytes.size(); i = i + 3)
+        for (int i = 0; i < bytes.size(); i = i + 3){
             encoded = encoded + encodeTriple(&bytes[i], min(3, (int) bytes.size() - i));
+        }
 
         return encoded;
     }

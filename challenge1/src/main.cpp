@@ -4,44 +4,13 @@
 
 #include "config.h"
 #include "base64.h"
+#include "io.h"
 
 using namespace std;
 
-string readBase64File() {
-    ifstream in(BASE64_FILE, ios::ate | ios::in | ios::binary);
-
-    string str(in.tellg(), ' ');
-
-    in.seekg(0, ios::beg);
-    in.read(&str[0], str.size());
-
-    return str;
-}
-
-vector<char> readHexFile() {
-    ifstream in(HEX_FILE, ios::ate | ios::in | ios::binary);
-    auto size = in.tellg();
-
-    if (size % 2 != 0) {
-        throw runtime_error("The input string is not odd!");
-    }
-
-    vector<char> ret(size / 2);
-
-    in.seekg(0, ios::beg);
-
-    for (auto i = 0; i < ret.size(); ++i) {
-        string str(2, ' ');
-        in.read(&str[0], 2);
-        ret[i] = (stoi(str, 0, 16));
-    }
-
-    return ret;
-}
-
 int main() {
-    auto hex = readHexFile();
-    auto b64 = readBase64File();
+    auto hex = io::readWholeFile(HEX_FILE, io::hex);
+    auto b64 = io::readWholeFile(BASE64_FILE);
 
     if (base64::encode(hex) == b64 && base64::encode({65, 66}) == "QUI=" && base64::encode({65}) == "QQ==" && base64::encode({66}) == "Qg==")
         cout << "Base64 algorithm works fine" << std::endl;

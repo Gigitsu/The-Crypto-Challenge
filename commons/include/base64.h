@@ -1,10 +1,9 @@
 #include <string>
-#include <vector>
 
 using namespace std;
 
 namespace base64 {
-    string encode(vector<char> bytes);
+    string encode(string bytes);
 
     int decode();
 }
