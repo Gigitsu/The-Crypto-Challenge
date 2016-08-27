@@ -1,0 +1,7 @@
+//
+// Created by gigitsu on 23/08/2016.
+//
+
+#define HEX_FIRST_FILE "@PROJECT_HEX_FIRST_FILE@"
+#define HEX_SECOND_FILE "@PROJECT_HEX_SECOND_FILE@"
+#define EXPECTED_FILE "@PROJECT_EXPECTED_FILE@"

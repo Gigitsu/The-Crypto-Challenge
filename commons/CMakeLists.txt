@@ -1,7 +1,7 @@
 project(commons)
 
 set(PROJECT_SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/src)
-set(COMMONS_SRC ${PROJECT_SOURCE_DIR}/base64.cpp ${PROJECT_SOURCE_DIR}/io.cpp)
+set(COMMONS_SRC ${PROJECT_SOURCE_DIR}/base64.cpp ${PROJECT_SOURCE_DIR}/io.cpp ${PROJECT_SOURCE_DIR}/binary.cpp)
 
 add_library(commons STATIC ${COMMONS_SRC})
 

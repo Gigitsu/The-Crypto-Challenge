@@ -7,8 +7,12 @@
       <sourceFolder url="file://$MODULE_DIR$/challenge1/CMakeLists.txt" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/commons/src/io.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/commons/src/binary.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/commons/src/base64.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/commons/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/challenge2/src/main.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/challenge2/src/config.h.in" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/challenge2/CMakeLists.txt" isTestSource="false" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library">
@@ -19,12 +23,16 @@
           <root url="file://C:/MinGW/mingw64/x86_64-w64-mingw32/include" />
           <root url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/TheCryptoChallenge-f8ddd677/f8ddd677/Release0/Challenge1" />
           <root url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/TheCryptoChallenge-f8ddd677/f8ddd677/Release0/Commons" />
+          <root url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/TheCryptoChallenge-f8ddd677/f8ddd677/Release0/challenge2" />
           <root url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/TheCryptoChallenge-f8ddd677/f8ddd677/RelWithDebInfo0/Challenge1" />
           <root url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/TheCryptoChallenge-f8ddd677/f8ddd677/RelWithDebInfo0/Commons" />
+          <root url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/TheCryptoChallenge-f8ddd677/f8ddd677/RelWithDebInfo0/challenge2" />
           <root url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/TheCryptoChallenge-f8ddd677/f8ddd677/MinSizeRel0/Challenge1" />
           <root url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/TheCryptoChallenge-f8ddd677/f8ddd677/MinSizeRel0/Commons" />
+          <root url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/TheCryptoChallenge-f8ddd677/f8ddd677/MinSizeRel0/challenge2" />
           <root url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/TheCryptoChallenge-f8ddd677/f8ddd677/Debug0/Challenge1" />
           <root url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/TheCryptoChallenge-f8ddd677/f8ddd677/Debug0/Commons" />
+          <root url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/TheCryptoChallenge-f8ddd677/f8ddd677/Debug0/challenge2" />
         </CLASSES>
         <SOURCES>
           <root url="file://C:/MinGW/mingw64/lib/gcc/x86_64-w64-mingw32/6.1.0/include" />
@@ -32,12 +40,16 @@
           <root url="file://C:/MinGW/mingw64/x86_64-w64-mingw32/include" />
           <root url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/TheCryptoChallenge-f8ddd677/f8ddd677/Release0/Challenge1" />
           <root url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/TheCryptoChallenge-f8ddd677/f8ddd677/Release0/Commons" />
+          <root url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/TheCryptoChallenge-f8ddd677/f8ddd677/Release0/challenge2" />
           <root url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/TheCryptoChallenge-f8ddd677/f8ddd677/RelWithDebInfo0/Challenge1" />
           <root url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/TheCryptoChallenge-f8ddd677/f8ddd677/RelWithDebInfo0/Commons" />
+          <root url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/TheCryptoChallenge-f8ddd677/f8ddd677/RelWithDebInfo0/challenge2" />
           <root url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/TheCryptoChallenge-f8ddd677/f8ddd677/MinSizeRel0/Challenge1" />
           <root url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/TheCryptoChallenge-f8ddd677/f8ddd677/MinSizeRel0/Commons" />
+          <root url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/TheCryptoChallenge-f8ddd677/f8ddd677/MinSizeRel0/challenge2" />
           <root url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/TheCryptoChallenge-f8ddd677/f8ddd677/Debug0/Challenge1" />
           <root url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/TheCryptoChallenge-f8ddd677/f8ddd677/Debug0/Commons" />
+          <root url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/TheCryptoChallenge-f8ddd677/f8ddd677/Debug0/challenge2" />
         </SOURCES>
       </library>
     </orderEntry>
